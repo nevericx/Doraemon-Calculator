@@ -3,17 +3,31 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     font-family: 'Poppins', sans-serif; 
     margin: 0;
+}
+
+.calculator-wrapper {
+    width: 320px; 
+}
+
+.doraemon-head {
+    width: 137.3%; 
+    height: auto; 
+    display: block; 
+    position: relative;
+    z-index: 2;
+    margin-left: -36px;
 }
 
 .calculator {
     width: 320px;
     background-color: #36A9E1; 
-    border-radius: 30px; 
+    border-radius: 0 0 30px 30px; 
     padding: 25px; 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
 }
 
 .display {
@@ -43,12 +57,9 @@ button {
     border: none;
     border-radius: 50%; 
     cursor: pointer;
-    
     background-color: #ffffff; 
     color: #e63946; 
-    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
     transition: all 0.15s ease-out; 
     display: flex;
     justify-content: center;
@@ -82,10 +93,8 @@ button:active {
     grid-column: span 2; 
     width: 135px; 
     border-radius: 30px; 
-    
     background-color: #ffffff;
     color: #e63946;
     justify-content: center; 
     padding-left: 0; 
 }
-
